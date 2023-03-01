@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,250&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+:root {
+    --primary: #fff;
+    --secondary: #36454f;
+    --textcolor: #17B7FB;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--primary);
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    z-index: 222;
+}
+
+.logo {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.logo b {
+    color: var(--textcolor);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: right;
+    margin-right: 100px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 1;
+    color: var(--secondary);
+}
+
+nav ul li:hover a {
+    color: var(--textcolor);
+}
+
+.switch {
+    --primary: #1e1f20;
+    --secondary: #fff;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+
+.row .cols {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.row .textdata h2 {
+    font-size: 5em;
+    font-weight: 300;
+    color: var(--secondary);
+    z-index: 1111;
+    margin-top: 50px;
+}
+
+.row .textdata h2 span {
+    color: var(--textcolor);
+    font-weight: bold;
+}
+
+.row .textdata h3 {
+    font-size: 3em;
+    font-weight: 400;
+    color: var(--secondary);
+    margin: 10px 0;
+}
+
+.row .textdata p {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 10px 0;
+}
+
+.row .textdata .btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.row .btn button {
+    border: none;
+    background: var(--textcolor);
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.row .btn button:hover {
+    transition: 0.3s ease;
+    padding: 10px 40px;
+}
+
+/* .row .sociallinks {
+    position: absolute;
+    bottom: 100px;
+} */
+
+.row .sociallinks i {
+    font-size: 3em;
+    margin: 0 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    color: var(--secondary);
+    transition: 0.2s ease;
+}
+
+.row .sociallinks i:hover {
+    /* font-size: 3.4em; */
+    color: var(--textcolor);
+} 
+
+.row .imagedata {
+    overflow: hidden;
+}
+
+.row .imagedata .imgbox {
+    position: relative;
+    width: 800;
+    top: 15px;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+
+.row .imagedata .imgbox img {
+    width: 100%;
+}
+
+.row .imagedata:hover .imgbox {
+    transform: translateX(-10px);
+}
+
+.row .imagedata .pattern {
+    position: absolute;
+    background: url(../img/kiii.png);
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    right: 40px;
+    top: 20px;
+    transition: 0.3s ease;
+}
+
+.row .imagedata:hover .pattern {
+    transform: translate(20px, -10px) scale(0.95);
+}
+
+.container .toggleNav {
+    position: relative;
+}
+
+.container .toggleNav .fa {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.fa-sun {
+    display: none;
+    color: #fff;
+}
+
+.switch .fa-sun {
+    display: block;
+}
+
+.switch .fa-moon {
+    display: none;
+}

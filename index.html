@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portafolio #3</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- MENU -->
+        <nav>
+            <a href="#" class="logo">J.<b>V.</b>Dev.</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="toggleNav">
+                <i class="fa fa-sun"></i>
+                <i class="fa fa-moon"></i>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="cols textdata">
+                <h2>Hi, I'm <span>Juan Erick</span></h2>
+                <h3>Web Designer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum error quibusdam totam minus illo hic? Saepe explicabo autem ipsum eum!</p>
+                <div class="btn">
+                    <button>Hire me!</button>
+                </div>
+                <div class="sociallinks">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="cols imagedata">
+                <div class="imgbox">
+                    <img src="img/haaland.png" alt="">
+                </div>
+                <div class="pattern"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CODE JS -->
+    <script>
+        const toggleNav = document.querySelector('.toggleNav');
+        toggleNav.addEventListener('click', function(){
+            document.body.classList.toggle('switch');
+        });
+    </script>
+</body>
+</html>
